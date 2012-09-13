@@ -1,0 +1,7 @@
+<layers>
+    <layer
+        name="giesing2060.theme"
+        interface="giesing2060.theme.interfaces.IGiesing2060Layer"
+        />
+</layers>
+
