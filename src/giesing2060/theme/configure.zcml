@@ -25,10 +25,10 @@
       layer="giesing2060.theme.interfaces.IGiesing2060Layer"
       />
 
-  <browser:resourceDirectory
+  <!--browser:resourceDirectory
       name="giesing2060.theme.images"
       directory="images"
       layer="giesing2060.theme.interfaces.IGiesing2060Layer"
-      />
+      /-->
 
 </configure>
