@@ -1,0 +1,97 @@
+body {
+    background-color: #FFFCE0;
+    font-size: 120%;
+}
+.visualClear {
+    clear: both;
+}
+* *:link, *:visited {
+    text-decoration: none;
+    color: #AC821F;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+#header {
+    padding-top: 0.5em;
+    max-width: 35em;
+    margin: 0 auto;
+}
+#giesing-main-menu {
+    height: 5em;
+    width: 5em;
+    float: left;
+    margin: 0 1.25em 0 0;
+}
+#giesing-main-menu dt {
+    height: 5em;
+    width: 5em;
+}
+a.main-menu {
+/*    position: relative;*/
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+    line-height: 2.25em;
+    display: inline-block;
+    width: 2.4em;
+    height: 2.4em;
+    border-width: 0.1em;
+    border-color: black;
+    border-style: solid;
+}
+#giesing-main-menu dd {
+    background: none repeat scroll 0 0 #C0C080;
+    width: 14em;
+    padding: 0.25em;
+    margin: 0;
+    font-size: 150%;
+    line-height: 175%;
+}
+.actionMenu.activated .actionMenuContent,
+#contentActionMenus dl.actionMenu.activated dd {
+    z-index: 1008;
+}
+dl.actionMenu ul {
+    padding: 0.5em;
+}
+dl.actionMenu.deactivated dd {
+    display: none;
+}
+dl.actionMenu.activated dd {
+    position: absolute;
+}
+a#portal-logo {
+    display: inline-block;
+    height: 5em;
+    position: relative;
+}
+a#portal-logo img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#body {
+    max-width: 35em;
+    margin: 0 auto 2em auto;
+}
+.documentByLine,
+.comments {
+    font-size: 80%;
+}
+div#explore {
+    height: 2.75em;
+}
+div#explore .next,
+div#explore .previous,
+div#explore .tag {
+    width: 22.25%;
+    font-size: 75%;
+    float: right;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    border: 0.2em solid #ccc;
+    height: 2.75em;
+    padding: 0 0.5em;
+}
