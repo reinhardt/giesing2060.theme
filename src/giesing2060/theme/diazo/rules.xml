@@ -25,8 +25,15 @@
   <!--append css:content="#edit-bar" css:theme="#content"
           css:if-content="#edit-bar" /-->
 
+  <!-- Fill the explore bar -->
+  <replace css:content="span#form-widgets-timetag" css:theme-children="div#timetag span" />
+  <replace css:content="span#form-widgets-locationtag" css:theme-children="div#locationtag span" />
+  <replace css:content="a.next" css:theme="a.next" />
+  <replace css:content="a.previous" css:theme="a.previous" />
+  <drop css:content="div#formfield-form-widgets-timetag" />
+  <drop css:content="div#formfield-form-widgets-locationtag" />
+
   <!-- Main content rule: Put plone content into theme content -->
   <append css:content-children="#content" css:theme="#content" />
-
 </rules>
 
