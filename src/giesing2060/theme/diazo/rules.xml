@@ -30,6 +30,9 @@
   <replace css:content="span#form-widgets-locationtag" css:theme-children="div#locationtag span" />
   <replace css:content="a.next" css:theme="a.next" />
   <replace css:content="a.previous" css:theme="a.previous" />
+
+  <replace css:content="#TimeLineViewlet" css:theme="#TimeLineViewlet" />
+
   <drop css:content="div#formfield-form-widgets-timetag" />
   <drop css:content="div#formfield-form-widgets-locationtag" />
 

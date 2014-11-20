@@ -95,3 +95,33 @@ div#explore .tag {
     height: 2.75em;
     padding: 0 0.5em;
 }
+#TimeLineViewlet {
+    display: none;
+}
+#TimeLineViewlet ul {
+    height: 3.75em;
+    padding: 0.1em 0em 0em;
+}
+#TimeLineViewlet ul li {
+    display: inline;
+    border-right: 0.1em solid gray;
+}
+#TimeLineViewlet ul li.even {
+    border-bottom: 0.1em solid black;
+    padding: 0.1em 1em 0.5em;
+}
+#TimeLineViewlet ul li.odd {
+    border-top: 0.1em solid black;
+    padding: 0.5em 1em 0.1em;
+    position: relative;
+    top: 2.15em;
+}
+#TimeLineViewlet ul li a .timetag {
+    display:none;
+}
+#TimeLineViewlet ul li a:hover .timetag {
+    display:block;
+}
+.current_snippet {
+    font-weight: bold;
+}
