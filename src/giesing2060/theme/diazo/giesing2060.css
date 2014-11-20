@@ -95,7 +95,9 @@ div#explore .tag {
     height: 2.75em;
     padding: 0 0.5em;
 }
-#TimeLineViewlet {
+#TimeLineViewlet,
+div#commenting,
+div.discussion {
     display: none;
 }
 #TimeLineViewlet ul {

@@ -32,6 +32,9 @@
   <replace css:content="a.previous" css:theme="a.previous" />
 
   <replace css:content="#TimeLineViewlet" css:theme="#TimeLineViewlet" />
+  
+  <replace css:content="#commenting" css:theme="#commenting" />
+  <replace css:content="div.discussion" css:theme="div.discussion" />
 
   <drop css:content="div#formfield-form-widgets-timetag" />
   <drop css:content="div#formfield-form-widgets-locationtag" />

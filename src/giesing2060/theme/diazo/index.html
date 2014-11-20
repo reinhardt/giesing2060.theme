@@ -117,8 +117,123 @@
             </div>
 
             <div id="comments" class="comments">
-                <p>Zu diesem Beitrag gibt es <a href="comments.html">24578 Kommentare</a>.
-                <a href="new-comment.html">Wie hat Dir der Schnipsel gefallen?</a></p>
+                <p>Zu diesem Beitrag gibt es <a href="#comments" onClick="jQuery('div.discussion').slideToggle();">24578 Kommentare</a>.
+                <a href="#commenting" onClick="jQuery('#commenting').slideToggle();">Wie hat Dir der Schnipsel gefallen?</a></p>
+                <div class="discussion showCommenterImage">
+                    <div id="1370380090853299" class="comment replyTreeLevel0 state-published">
+                        <div class="commentImage">
+                            <img height="32" class="defaultuserimg" alt="Sebastian Schuster" src="http://giesing2060.de/defaultUser.png">
+                        </div>
+
+                        <div class="documentByLine">
+                                Sebastian Schuster
+                            sagt
+                            <div class="commentDate">04.06.2013 23:08</div>
+                        </div>
+
+                        <div class="commentBody">
+
+                            <p>Kurze Notizen vom 4.6.2013</p>
+        <p>Zum Thema Mensch-Maschine interface
+        Wird ein Imoplantat als Werkzeug benutzt oder als  eigene Fähigkeit?
+        Wo in dieser Entwicklung befindet sich die Welt 2060?</p>
+                            <div class="commentActions">
+                                <!-- Workflow actions (e.g. 'publish') -->
+                            </div>
+                        </div>
+                        <button class="context reply-to-comment-button hide allowMultiSubmit" style="display: inline;">Antworten</button>
+                    </div>
+
+                    <div id="1370986016984947" class="comment replyTreeLevel0 state-published">
+                        <div class="commentImage">
+                            <img height="32" class="defaultuserimg" alt="Manuel Reinhardt" src="http://giesing2060.de/portal_memberdata/portraits/Funker">
+                        </div>
+
+                        <div class="documentByLine">
+                                Manuel Reinhardt
+                            sagt
+                            <div class="commentDate">11.06.2013 23:26</div>
+                        </div>
+                        <div class="commentBody">
+                            <p><a href="http://www.muenchen.de/rathaus/Stadtverwaltung/Referat-fuer-Gesundheit-und-Umwelt/Wasser_und_Boden/Boden/Historische_Stadtentwicklung.html" target="_blank">München - Historische Stadtentwicklung</a></p>
+
+                            <div class="commentActions">
+                                <!-- Workflow actions (e.g. 'publish') -->
+                            </div>
+
+
+                        </div>
+                        <button class="context reply-to-comment-button hide allowMultiSubmit" style="display: inline;">Antworten</button>
+                    </div>
+
+                </div>
+                <div class="reply" id="commenting">
+                    <fieldset>
+                        <legend>Kommentieren</legend>
+                        <p>Sie können einen Kommentar abgeben, indem Sie das untenstehende Formular ausfüllen. Sie können die Markdown-Syntax für Links und Bilder benutzen.</p>
+                            <form enctype="multipart/form-data" method="post" action="http://giesing2060.de/background/hintergruende/document_view" class="rowlike enableUnloadProtection   kssattr-formname-document_view">
+                              <!-- Default fieldset -->
+                              <div id="formfield-form-widgets-in_reply_to" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.in_reply_to" data-fieldname="form.widgets.in_reply_to">
+
+                                 <div class="fieldErrorBox"></div>
+                                 <input type="hidden" class="hidden-widget" value="" name="form.widgets.in_reply_to" id="form-widgets-in_reply_to">
+                              </div>
+                              <div id="formfield-form-widgets-author_name" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.author_name" data-fieldname="form.widgets.author_name">
+                                <label class="horizontal" for="form-widgets-author_name">
+                                    Name
+                                </label>
+                                <div class="fieldErrorBox"></div>
+                                <input type="text" value="" class="text-widget textline-field" name="form.widgets.author_name" id="form-widgets-author_name">
+                              </div>
+                              <div id="formfield-form-widgets-author_email" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.author_email" data-fieldname="form.widgets.author_email">
+                                <div class="fieldErrorBox"></div>
+                                <input type="hidden" class="hidden-widget" value="" name="form.widgets.author_email" id="form-widgets-author_email">
+                              </div>
+                              <div id="formfield-form-widgets-comment-text" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.text" data-fieldname="form.widgets.text">
+                              <label class="horizontal" for="form-widgets-comment-text">
+                                  Kommentar
+
+                                  <span title="Erforderlich" class="required horizontal">&nbsp;</span>
+                                  
+                                  
+                              </label>
+
+                              <div class="fieldErrorBox"></div>
+                              <textarea class="textarea-widget required text-field autoresize" name="form.widgets.text" id="form-widgets-comment-text"></textarea>
+                            </div>
+                            <div id="formfield-form-widgets-user_notification" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.user_notification">
+                              <span class="option">
+                                <input type="hidden" class="single-checkbox-widget bool-field" value="selected" name="form.widgets.user_notification:list" id="form-widgets-user_notification-0">
+                              </span>
+                              <div class="fieldErrorBox"></div>
+                            </div>
+                            <div id="formfield-form-widgets-captcha" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.captcha" data-fieldname="form.widgets.captcha">
+                              <label class="horizontal" for="form-widgets-captcha">
+                                Captcha
+                              </label>
+                              <div class="fieldErrorBox"></div>
+                                  <script>
+                                  var RecaptchaOptions = {
+                                      lang: 'de'
+                                  };
+                                  </script>
+                                  <script src="http://www.google.com/recaptcha/api/challenge?k=6Lem3_MSAAAAAJysH7IXBgzOK_UUJiC7ChZByaPm" type="text/javascript"></script><script src="http://www.google.com/recaptcha/api/js/recaptcha.js" type="text/javascript"></script><div style="" id="recaptcha_widget_div" class=" recaptcha_nothad_incorrect_sol recaptcha_isnot_showing_audio"><div id="recaptcha_area"><table class="recaptchatable recaptcha_theme_red" id="recaptcha_table"> <tbody><tr> <td class="recaptcha_r1_c1" colspan="6"></td> </tr> <tr> <td class="recaptcha_r2_c1"></td> <td class="recaptcha_image_cell" colspan="4"><center><div id="recaptcha_image" style="width: 300px; height: 57px;"><img width="300" height="57" src="http://www.google.com/recaptcha/api/image?c=03AHJ_VuuGAgRPxZriycNnOHS9-NJvA5EnUJeke3ZQIPHnVi4tVhnJE2ySwXoDxSUSyin5VK41EHmi2j_43d3EIEpZl25J9LtW1RvRsjmiRCTtwqg9WDhKWtZVyTN66SbIh5LyVrnfoz02PS4bW3UaMxii18ynEfKvQj-rRud45AbzW-l_Is5Dy1SBteo64pdl5U592HA3hWc_itq2zHTPfVN5HvU9tIN6Ug&amp;th=,8bAUFxd_ZQEQDraqdeWmK4tw5fAAAAehoAAAEHfYAX_3TFGUyPSwuAMcuk10Q6CXNjVRTb_VUlLp6wKkxIwvuMBdViNuaoIqr32vXBncxg_ieae07HFs3nftjkAr3yBYpT0X5arNEOpfJVLCg03w9FdphMDcjvSzXq_is80BOfsFUkyJgq5wH4qBQRwuP09i6Dcmq7ztYKArbxK08i-VUfKlBRIWDOt72O1-Lz3iHcKraoJgw0fD01Ur75oZ5Afjj4JKki3_JdP4A4SCS8iI4SIY0LCFBh4nULAnZahUfxcx4mFGMwCyIkcERHoK3hOGr5pLcQ13Kyy4KZ2arz-h8OZNmH1SL5SCel_jFFbf34CefExqtGlZlpuVJVjQaabzFqa6oeJN7sw39K-0w7lzGt9cbdhkaVTb61fXfu2tyoloQcDzdoYADkiZG0WJM9vYrXsIiYz1Sw7GJ9oDpW3uY3x6yEj75_5iVq1rks_qutYq-pGoGkvwkMv-v0PMAcSkw_OOvCRCdR_nGMXw4fN_3ldFx-MOWKT6fOdcmNtpEw" alt="reCAPTCHA-Bild" id="recaptcha_challenge_image"></div></center></td> <td class="recaptcha_r2_c2"></td> </tr> <tr> <td class="recaptcha_r3_c1" rowspan="6"></td> <td class="recaptcha_r3_c2" colspan="4"></td> <td class="recaptcha_r3_c3" rowspan="6"></td> </tr> <tr> <td height="49" class="recaptcha_r4_c1" rowspan="3"> <div class="recaptcha_input_area"> <span id="recaptcha_challenge_field_holder" style="display: none;"><input type="hidden" value="03AHJ_VuuGAgRPxZriycNnOHS9-NJvA5EnUJeke3ZQIPHnVi4tVhnJE2ySwXoDxSUSyin5VK41EHmi2j_43d3EIEpZl25J9LtW1RvRsjmiRCTtwqg9WDhKWtZVyTN66SbIh5LyVrnfoz02PS4bW3UaMxii18ynEfKvQj-rRud45AbzW-l_Is5Dy1SBteo64pdl5U592HA3hWc_itq2zHTPfVN5HvU9tIN6Ug" id="recaptcha_challenge_field" name="recaptcha_challenge_field"></span><input type="text" placeholder="Geben Sie den angezeigten Text ein" autocapitalize="off" autocorrect="off" id="recaptcha_response_field" name="recaptcha_response_field" autocomplete="off"> <span class="recaptcha_only_if_privacy" id="recaptcha_privacy"></span> </div> </td> <td class="recaptcha_r4_c2" rowspan="4"></td> <td><a id="recaptcha_reload_btn" title="Neues Captcha abrufen"><img width="25" height="17" id="recaptcha_reload" src="http://www.google.com/recaptcha/api/img/red/refresh.gif" alt="Neues Captcha abrufen"></a></td> <td class="recaptcha_r4_c4" rowspan="4"></td> </tr> <tr> <td><a class="recaptcha_only_if_image" id="recaptcha_switch_audio_btn" title="Audio-Captcha abrufen"><img width="25" height="16" alt="Audio-Captcha abrufen" id="recaptcha_switch_audio" src="http://www.google.com/recaptcha/api/img/red/audio.gif"></a><a class="recaptcha_only_if_audio" id="recaptcha_switch_img_btn" title="Captcha abrufen"><img width="25" height="16" alt="Captcha abrufen" id="recaptcha_switch_img" src="http://www.google.com/recaptcha/api/img/red/text.gif"></a></td> </tr> <tr> <td><a id="recaptcha_whatsthis_btn" title="Hilfe"><img width="25" height="16" id="recaptcha_whatsthis" src="http://www.google.com/recaptcha/api/img/red/help.gif" alt="Hilfe"></a></td> </tr> <tr> <td class="recaptcha_r7_c1"></td> <td class="recaptcha_r8_c1"></td> </tr> </tbody></table> </div></div>
+
+                                  <noscript>
+                                    &lt;iframe src="http://www.google.com/recaptcha/api/noscript?k=6Lem3_MSAAAAAJysH7IXBgzOK_UUJiC7ChZByaPm" height="300" width="500" frameborder="0"&gt;&lt;/iframe&gt;&lt;br /&gt;
+                                    &lt;textarea name="recaptcha_challenge_field" rows="3" cols="40"&gt;&lt;/textarea&gt;
+                                    &lt;input type='hidden' name='recaptcha_response_field' value='manual_challenge' /&gt;
+                                  </noscript>
+
+                              </div>
+                              <!-- Secondary fieldsets -->
+                              <div class="formControls">
+                                  <input type="submit" value="Kommentieren" class="submit-widget button-field context" name="form.buttons.comment" id="form-buttons-comment">
+                                  <input type="submit" value="Abbrechen" class="submit-widget button-field standalone hide" name="form.buttons.cancel" id="form-buttons-cancel" style="display: none;">
+                              </div>
+                            </form>
+                    </fieldset>
+                </div>
             </div>
         </div>
     </body>
