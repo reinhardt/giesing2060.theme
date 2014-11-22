@@ -9,6 +9,9 @@ body {
     text-decoration: none;
     color: #AC821F;
 }
+* *:link:hover{
+    text-decoration: underline;
+}
 * ul, ol {
     list-style: outside none none;
 }
