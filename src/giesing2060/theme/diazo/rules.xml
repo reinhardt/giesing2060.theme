@@ -8,8 +8,8 @@
   <copy theme="/html/head/meta" content="/html/head/meta" />
   <theme href="index.html" css:if-content="#visual-portal-wrapper" />
 
-  <!-- Pull in Plone CSS -->
-  <append theme="/html/head"
+  <!-- Pull in Plone JS -->
+  <replace theme="/html/head/script"
           content="/html/head/script" />
 
   <!--<replace theme="/html/head/meta/[@name='viewport']" content="/html/head/meta/[@name='viewport']"/>-->
@@ -24,6 +24,13 @@
 
   <!--append css:content="#edit-bar" css:theme="#content"
           css:if-content="#edit-bar" /-->
+
+  <!-- Fill the main menu -->
+  <before css:content="form#livesearch0" css:theme="#giesing-main-menu div.search" />
+  <replace content="//*[@id='portal-globalnav']//li[not(@id='portaltab-news')]" css:theme-children="#giesing-main-menu div.first" />
+  <drop css:theme-children="#giesing-main-menu div.second" />
+  <after content="//*[@id='portal-globalnav']//li[@id='portaltab-news']" css:theme-children="#giesing-main-menu div.second" />
+  <after css:content="#portal-personaltools li" css:theme-children="#giesing-main-menu div.second" />
 
   <!-- Fill the explore bar -->
   <replace css:content="span#form-widgets-timetag" css:theme-children="div#timetag span" />
