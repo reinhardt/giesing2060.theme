@@ -9,8 +9,9 @@
   <theme href="index.html" css:if-content="#visual-portal-wrapper" />
 
   <!-- Pull in Plone JS -->
-  <replace theme="/html/head/script"
-          content="/html/head/script" />
+  <!-- FIXME The main menu does not work if we do this -->
+  <!--replace theme="/html/head/script"
+          content="/html/head/script" /-->
 
   <!--<replace theme="/html/head/meta/[@name='viewport']" content="/html/head/meta/[@name='viewport']"/>-->
 
