@@ -1,0 +1,58 @@
+{
+			"text/restructured": {
+				"Picture": {
+					"replaceWith": null,
+					"className": "Picture",
+					"beforeInsert": "markitup.finder.open"
+				},
+				"Link": {
+					"className": "Link",
+					"openWith": null,
+					"closeWith": null,
+					"placeHolder": null,
+					"beforeInsert": "markitup.finder.open"
+				}
+			},
+			"text/x-web-markdown": {
+				"Picture": {
+					"replaceWith": null,
+					"className": "Picture",
+					"beforeInsert": "markitup.finder.open"
+				},
+				"Link": {
+					"className": "Link",
+					"openWith": null,
+					"closeWith": null,
+					"placeHolder": null,
+					"beforeInsert": "markitup.finder.open"
+				}
+			},
+			"text/x-web-textile": {
+				"Picture": {
+					"replaceWith": null,
+					"className": "Picture",
+					"beforeInsert": "markitup.finder.open"
+				},
+				"Link": {
+					"className": "Link",
+					"openWith": null,
+					"closeWith": null,
+					"placeHolder": null,
+					"beforeInsert": "markitup.finder.open"
+				}
+			},
+			"text/x-nazmd": {
+				"Picture": {
+					"replaceWith": null,
+					"className": "Picture",
+					"beforeInsert": "markitup.finder.open"
+				},
+				"Link": {
+					"className": "Link",
+					"openWith": null,
+					"closeWith": null,
+					"placeHolder": null,
+					"beforeInsert": "markitup.finder.open"
+				}
+			}
+		}

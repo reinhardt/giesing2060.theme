@@ -10,8 +10,10 @@
 
   <!-- Pull in Plone JS -->
   <!-- FIXME The main menu does not work if we do this -->
-  <!--replace theme="/html/head/script"
-          content="/html/head/script" /-->
+  <drop theme="/html/head/script" />
+  <after theme-children="/html/head"
+         content="/html/head/link[contains(@href, '++resource++collective.markitup')]" />
+  <after theme-children="/html/head" content="/html/head/script" />
 
   <!--<replace theme="/html/head/meta/[@name='viewport']" content="/html/head/meta/[@name='viewport']"/>-->
 

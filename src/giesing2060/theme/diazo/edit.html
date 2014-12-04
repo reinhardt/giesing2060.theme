@@ -2,9 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="markitup-simple.css" media="screen" type="text/css" rel="stylesheet">
+        <link href="markitup-markdown.css" media="screen" type="text/css" rel="stylesheet">
         <link href="giesing2060.css" media="screen" type="text/css" rel="stylesheet">
-        <script type="text/javascript" src="jquery.js"></script>
-        <script type="text/javascript" src="dropdown.js"></script>
+        <script type="text/javascript" src="javascript/jquery.js"></script>
+        <script type="text/javascript" src="javascript/plone.app.jquerytools.js"></script>
+        <script type="text/javascript" src="javascript/dropdown.js"></script>
+        <script type="text/javascript" src="javascript/markitup/jquery.markitup.js"></script>
+        <script type="text/javascript" src="javascript/markitup/init.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -32,7 +37,7 @@
                     <hr/>
                     <div class="second">
                         <li><a href="#">Blag</a></li>
-                        <li><a href="#">Abmelden</a></li>
+                        <li><a href="index.html">Abmelden</a></li>
                     </div>
                 </ul>
               </dd>
@@ -49,7 +54,7 @@
                         <a href="http://localhost:11080/giesing2060/folder_contents">Inhalte</a>
                       </li>
                       <li class="selected" id="contentview-view">
-                        <a href="http://localhost:11080/giesing2060/front-page">Anzeigen</a>
+                        <a href="index.html">Anzeigen</a>
                       </li>
                       <li class="plain" id="contentview-edit">
                         <a href="http://localhost:11080/giesing2060/front-page/edit">Bearbeiten</a>
@@ -218,21 +223,47 @@
                 <div id="viewlet-above-content-body"></div>
                 <div id="content-core">
                     <div data-fieldname="form.widgets.text" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.text" id="formfield-form-widgets-text">
+
+                        <label for="form-widgets-text" class="horizontal">
+                            Text
+                        </label>
+
                         <div class="fieldErrorBox"></div>
 
-                        <div id="form-widgets-text" class="richTextWidget richtext-field"><p>Die Zeit bis zum Termin mit Dr. Oppermann verging quälend langsam. Andrew sah ein wenig fern und überflog eine Tageszeitung, die Claire ihm brachte. Er brannte darauf, das Implantat auszuprobieren. Er hatte sich ja schon seit einiger Zeit ein Implantat holen wollen, weil die Bedienung wohl um einiges flüssiger war und auch das nervige Hantieren mit den Linsen weg fiel, aber so richtig heiß war er jetzt natürlich auf die experimentellen Features. Er hatte sich auf Cynaptics Anzeige gemeldet, weil er neugierig auf die Technik war, aber auch weil er die "Aufwandsentschädigung" ganz gut gebrauchen konnte. Nach allerlei nervigen Fragen, Tests und Untersuchungen war er als geeignet eingestuft worden, und nun war er der erste einer kleinen Gruppe von Testsubjekten, denen tatsächlich der Prototyp des neuen Implantats eingesetzt wurde. Das Besondere an diesem war, dass es nicht nur direkte Ein- und Ausgabe über Nervenschnittstellen ermöglichte, sondern zusätzlich "Augmented Intelligence" versprach, also die Erweiterung der kognitiven und intellektuellen Funktionen des Benutzers. Vor allem das Umgehen mit großen Datenmengen, zum Beispiel bei der Suche nach Schlüsselworten in einem Textkorpus, das bisher die Domäne der Rechner gewesen war, sollte nun für den Menschen greifbar werden.</p>
-<p>Andrew kam gute zehn Minuten zu früh zu seinem Termin. Dr. Oppermann war noch nicht in seinem Büro und es vergingen fünf weitere quälende Minuten bis er schnellen Schrittes den Gang herunter kam.</p>
-<p>"Hallo, Andrew! Gut, Sie zu sehen. Hat alles gut geklappt?"</p>
-<p>Andrew schüttelte seine ausgestreckte Hand. "Ja, danke, bestens."</p>
-<p>"Ausgezeichnet. Bitte, kommen Sie in mein Büro!"</p>
-<p>Andrew war schon ein paar mal bei Dr. Oppermann gewesen. Sein Büro war wohl einmal die postmoderne, sterile Vision eines Innenarchitekten gewesen, und hier und da schimmerte diese noch hindurch, aber sein Bewohner hatte dem Raum wohl über mehrere Jahre hinweg einen eigenen Charakter gegeben. An der Wand hingen Bilder, teils Kunstdrucke, teils anscheinend Originale weniger bekannter Künstler. Auf dem Schreibtisch und den Regalen standen verstreut kleine Gegenstände und Figuren, die aus aller Welt zu stammen schienen. Auch ein Modell eines Raumschiffs aus einer weniger bekannten Science Fiction Serie war dabei. Oppermann hatte es geschafft, dass der Raum nicht überladen wirkte, sondern einfach nur persönlich gestaltet.</p>
-<p>Nachdem Oppermann ein paar Fragen nach Andrews allgemeinem und medizinischem Wohlbefinden gestellt hatte, sagte er endlich die magischen Worte:</p>
-<p>"Gut, dann fahren wir es mal hoch, oder?"</p></div>
+                        <div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" class="richTextWidget richtext-field">
+
+                            <div class="fieldTextFormat">
+                                <label>Text Format</label>
+
+                                <select id="form.widgets.text_text_format" name="form.widgets.text.mimeType">
+                                    <option selected="selected" value="text/x-web-markdown">text/x-web-markdown</option>
+                                    <option value="text/x-web-textile">text/x-web-textile</option>
+                                    <option value="text/html">text/html</option>
+                                    <option value="text/restructured">text/restructured</option>
+                                </select>
+                            </div>
+                            <div>
+                              <textarea name="form.widgets.text" rows="25" id="form.widgets.text">Die Zeit bis zum Termin mit Dr. Oppermann verging quälend langsam. Andrew sah ein wenig fern und überflog eine Tageszeitung, die Claire ihm brachte. Er brannte darauf, das Implantat auszuprobieren. Er hatte sich ja schon seit einiger Zeit ein Implantat holen wollen, weil die Bedienung wohl um einiges flüssiger war und auch das nervige Hantieren mit den Linsen weg fiel, aber so richtig heiß war er jetzt natürlich auf die experimentellen Features. Er hatte sich auf Cynaptics Anzeige gemeldet, weil er neugierig auf die Technik war, aber auch weil er die "Aufwandsentschädigung" ganz gut gebrauchen konnte. Nach allerlei nervigen Fragen, Tests und Untersuchungen war er als geeignet eingestuft worden, und nun war er der erste einer kleinen Gruppe von Testsubjekten, denen tatsächlich der Prototyp des neuen Implantats eingesetzt wurde. Das Besondere an diesem war, dass es nicht nur direkte Ein- und Ausgabe über Nervenschnittstellen ermöglichte, sondern zusätzlich "Augmented Intelligence" versprach, also die Erweiterung der kognitiven und intellektuellen Funktionen des Benutzers. Vor allem das Umgehen mit großen Datenmengen, zum Beispiel bei der Suche nach Schlüsselworten in einem Textkorpus, das bisher die Domäne der Rechner gewesen war, sollte nun für den Menschen greifbar werden.
+
+Andrew kam gute zehn Minuten zu früh zu seinem Termin. Dr. Oppermann war noch nicht in seinem Büro und es vergingen fünf weitere quälende Minuten bis er schnellen Schrittes den Gang herunter kam.
+
+"Hallo, Andrew! Gut, Sie zu sehen. Hat alles gut geklappt?"
+
+Andrew schüttelte seine ausgestreckte Hand. "Ja, danke, bestens."
+
+"Ausgezeichnet. Bitte, kommen Sie in mein Büro!"
+
+Andrew war schon ein paar mal bei Dr. Oppermann gewesen. Sein Büro war wohl einmal die postmoderne, sterile Vision eines Innenarchitekten gewesen, und hier und da schimmerte diese noch hindurch, aber sein Bewohner hatte dem Raum wohl über mehrere Jahre hinweg einen eigenen Charakter gegeben. An der Wand hingen Bilder, teils Kunstdrucke, teils anscheinend Originale weniger bekannter Künstler. Auf dem Schreibtisch und den Regalen standen verstreut kleine Gegenstände und Figuren, die aus aller Welt zu stammen schienen. Auch ein Modell eines Raumschiffs aus einer weniger bekannten Science Fiction Serie war dabei. Oppermann hatte es geschafft, dass der Raum nicht überladen wirkte, sondern einfach nur persönlich gestaltet.
+
+Nachdem Oppermann ein paar Fragen nach Andrews allgemeinem und medizinischem Wohlbefinden gestellt hatte, sagte er endlich die magischen Worte:
+
+"Gut, dann fahren wir es mal hoch, oder?"</textarea>
+                            </div>
+                        </div>
 
                     </div>
-                </div>
-                        
             </article>
+
             <div id="explore">
                 <a title="Zum nächsten" href="ein-neues-spielzeug.html" class="next">
                    Weiter: Ein neues Spielzeug
@@ -384,7 +415,6 @@
                                       lang: 'de'
                                   };
                                   </script>
-                                  <script src="http://www.google.com/recaptcha/api/challenge?k=6Lem3_MSAAAAAJysH7IXBgzOK_UUJiC7ChZByaPm" type="text/javascript"></script><script src="http://www.google.com/recaptcha/api/js/recaptcha.js" type="text/javascript"></script><div style="" id="recaptcha_widget_div" class=" recaptcha_nothad_incorrect_sol recaptcha_isnot_showing_audio"><div id="recaptcha_area"><table class="recaptchatable recaptcha_theme_red" id="recaptcha_table"> <tbody><tr> <td class="recaptcha_r1_c1" colspan="6"></td> </tr> <tr> <td class="recaptcha_r2_c1"></td> <td class="recaptcha_image_cell" colspan="4"><center><div id="recaptcha_image" style="width: 300px; height: 57px;"><img width="300" height="57" src="http://www.google.com/recaptcha/api/image?c=03AHJ_VuuGAgRPxZriycNnOHS9-NJvA5EnUJeke3ZQIPHnVi4tVhnJE2ySwXoDxSUSyin5VK41EHmi2j_43d3EIEpZl25J9LtW1RvRsjmiRCTtwqg9WDhKWtZVyTN66SbIh5LyVrnfoz02PS4bW3UaMxii18ynEfKvQj-rRud45AbzW-l_Is5Dy1SBteo64pdl5U592HA3hWc_itq2zHTPfVN5HvU9tIN6Ug&amp;th=,8bAUFxd_ZQEQDraqdeWmK4tw5fAAAAehoAAAEHfYAX_3TFGUyPSwuAMcuk10Q6CXNjVRTb_VUlLp6wKkxIwvuMBdViNuaoIqr32vXBncxg_ieae07HFs3nftjkAr3yBYpT0X5arNEOpfJVLCg03w9FdphMDcjvSzXq_is80BOfsFUkyJgq5wH4qBQRwuP09i6Dcmq7ztYKArbxK08i-VUfKlBRIWDOt72O1-Lz3iHcKraoJgw0fD01Ur75oZ5Afjj4JKki3_JdP4A4SCS8iI4SIY0LCFBh4nULAnZahUfxcx4mFGMwCyIkcERHoK3hOGr5pLcQ13Kyy4KZ2arz-h8OZNmH1SL5SCel_jFFbf34CefExqtGlZlpuVJVjQaabzFqa6oeJN7sw39K-0w7lzGt9cbdhkaVTb61fXfu2tyoloQcDzdoYADkiZG0WJM9vYrXsIiYz1Sw7GJ9oDpW3uY3x6yEj75_5iVq1rks_qutYq-pGoGkvwkMv-v0PMAcSkw_OOvCRCdR_nGMXw4fN_3ldFx-MOWKT6fOdcmNtpEw" alt="reCAPTCHA-Bild" id="recaptcha_challenge_image"></div></center></td> <td class="recaptcha_r2_c2"></td> </tr> <tr> <td class="recaptcha_r3_c1" rowspan="6"></td> <td class="recaptcha_r3_c2" colspan="4"></td> <td class="recaptcha_r3_c3" rowspan="6"></td> </tr> <tr> <td height="49" class="recaptcha_r4_c1" rowspan="3"> <div class="recaptcha_input_area"> <span id="recaptcha_challenge_field_holder" style="display: none;"><input type="hidden" value="03AHJ_VuuGAgRPxZriycNnOHS9-NJvA5EnUJeke3ZQIPHnVi4tVhnJE2ySwXoDxSUSyin5VK41EHmi2j_43d3EIEpZl25J9LtW1RvRsjmiRCTtwqg9WDhKWtZVyTN66SbIh5LyVrnfoz02PS4bW3UaMxii18ynEfKvQj-rRud45AbzW-l_Is5Dy1SBteo64pdl5U592HA3hWc_itq2zHTPfVN5HvU9tIN6Ug" id="recaptcha_challenge_field" name="recaptcha_challenge_field"></span><input type="text" placeholder="Geben Sie den angezeigten Text ein" autocapitalize="off" autocorrect="off" id="recaptcha_response_field" name="recaptcha_response_field" autocomplete="off"> <span class="recaptcha_only_if_privacy" id="recaptcha_privacy"></span> </div> </td> <td class="recaptcha_r4_c2" rowspan="4"></td> <td><a id="recaptcha_reload_btn" title="Neues Captcha abrufen"><img width="25" height="17" id="recaptcha_reload" src="http://www.google.com/recaptcha/api/img/red/refresh.gif" alt="Neues Captcha abrufen"></a></td> <td class="recaptcha_r4_c4" rowspan="4"></td> </tr> <tr> <td><a class="recaptcha_only_if_image" id="recaptcha_switch_audio_btn" title="Audio-Captcha abrufen"><img width="25" height="16" alt="Audio-Captcha abrufen" id="recaptcha_switch_audio" src="http://www.google.com/recaptcha/api/img/red/audio.gif"></a><a class="recaptcha_only_if_audio" id="recaptcha_switch_img_btn" title="Captcha abrufen"><img width="25" height="16" alt="Captcha abrufen" id="recaptcha_switch_img" src="http://www.google.com/recaptcha/api/img/red/text.gif"></a></td> </tr> <tr> <td><a id="recaptcha_whatsthis_btn" title="Hilfe"><img width="25" height="16" id="recaptcha_whatsthis" src="http://www.google.com/recaptcha/api/img/red/help.gif" alt="Hilfe"></a></td> </tr> <tr> <td class="recaptcha_r7_c1"></td> <td class="recaptcha_r8_c1"></td> </tr> </tbody></table> </div></div>
 
                                   <noscript>
                                     &lt;iframe src="http://www.google.com/recaptcha/api/noscript?k=6Lem3_MSAAAAAJysH7IXBgzOK_UUJiC7ChZByaPm" height="300" width="500" frameborder="0"&gt;&lt;/iframe&gt;&lt;br /&gt;

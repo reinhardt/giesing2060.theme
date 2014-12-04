@@ -245,3 +245,12 @@ div.discussion {
 #personaltools-dashboard {
     display: none;
 }
+.markItUpHeader ul li {
+    background-color: #ebf0f2;
+}
+.markItUpHeader ul a {
+    background-position: center;
+}
+#content textarea {
+    width: 100%;
+}
