@@ -1,16 +1,23 @@
 body {
-    background-color: #FFFCE0;
+    background-color: #303030;
     font-size: 120%;
+	color: #EBF0F2;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300; 
 }
 .visualClear {
     clear: both;
 }
 * *:link, *:visited {
     text-decoration: none;
-    color: #AC821F;
+    color: #80C0FF;
 }
 * *:link:hover{
-    text-decoration: underline;
+    font-weight: 300; 
+}
+.documentFirstHeading{
+	font-size: 110%;
+	font-weight: 700;
 }
 * ul, ol {
     list-style: outside none none;
@@ -30,8 +37,10 @@ body {
     height: 5em;
     width: 5em;
 }
+#giesing-main-menu dt a {
+ 	color: #80C0FF;
+}
 a.main-menu {
-/*    position: relative;*/
     text-align: center;
     vertical-align: middle;
     font-size: 2em;
@@ -40,26 +49,39 @@ a.main-menu {
     width: 2.4em;
     height: 2.4em;
     border-width: 0.1em;
-    border-color: black;
+    border-color: #80C0FF;
     border-style: solid;
 }
 #giesing-main-menu dd {
-    background: none repeat scroll 0 0 #C0C080;
+    background: none repeat scroll 0 0 rgba(235,240,242,0.9);
     width: 14em;
     padding: 0.25em;
     margin: 0;
-    font-size: 150%;
-    line-height: 175%;
+    font-size: 100%;
+    line-height: 175%;	
+}
+#giesing-main-menu dd a {
+	color: #303030;
+}
+#giesing-main-menu dd a:hover {
+	/*olor: #80C0FF;*/
+	background-color: #80C0FF;
+	text-decoration: none;
 }
 .actionMenu.activated .actionMenuContent,
 #contentActionMenus dl.actionMenu.activated dd {
     z-index: 1008;
+	height: 50%;
+	transition: all 300ms ease 0s;
 }
 dl.actionMenu ul {
     padding: 0.5em;
 }
 dl.actionMenu.deactivated dd {
-    display: none;
+    /*display: none;*/
+	visibility: hidden;
+	height: 0%;
+	/*transform: translate(0,-100px);*/
 }
 dl.actionMenu.activated dd {
     position: absolute;
@@ -78,26 +100,62 @@ a#portal-logo img {
     max-width: 35em;
     margin: 0 auto 2em auto;
 }
-.documentByLine,
+.documentByLine {
+	font-weight: 100; 
+	font-size: 90%;
+}
 .comments {
     font-size: 80%;
 }
 div#explore {
     height: 2.75em;
 }
+/*div#explore a {
+}*/
 div#explore .next,
-div#explore .previous,
-div#explore .tag {
-    width: 22.25%;
+div#explore .previous {
+	font-weight: 300;
+    color: #303030;
+   	background-color: #EBF0F2;
+	width: 22.25%;
     font-size: 75%;
     float: right;
     text-align: center;
-    display: inline-block;
+	vertical-align: middle;
+	display: inline-block;
     overflow: hidden;
-    border: 0.2em solid #ccc;
+    border: 0.2em solid #303030;
     height: 2.75em;
     padding: 0 0.5em;
 }
+/*
+div#explore .next a,
+div#explore .previous a {
+    color: #303030;
+}
+div#explore .next a:hover,
+div#explore .previous a:hover {
+	background-color: #80C0FF;
+	text-decoration: underline;
+}
+*/
+div#explore .tag {
+	font-weight: 100;
+	width: 22.25%;
+    font-size: 75%;
+    float: right;
+    text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+    overflow: hidden;
+    border: 0.2em solid #303030;
+    height: 2.75em;
+    padding: 0 0.5em;
+	
+}
+/*div#explore .tag a {
+}*/
+
 #TimeLineViewlet,
 div#commenting,
 div.discussion {
