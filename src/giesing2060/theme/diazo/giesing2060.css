@@ -5,6 +5,14 @@ body {
 	font-family: 'Roboto Slab', serif;
 	font-weight: 300; 
 }
+::selection {
+    background: #80C0FF;
+	color: #303030;
+}
+::-moz-selection {
+    background: #80C0FF;
+	color: #303030;
+}
 .visualClear {
     clear: both;
 }
