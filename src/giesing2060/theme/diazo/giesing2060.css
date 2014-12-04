@@ -74,6 +74,9 @@ a.main-menu {
 dl#giesing-main-menu.actionMenu.activated dd {
 	height: 15.5em;
 }
+body.userrole-manager dl#giesing-main-menu.actionMenu.activated dd {
+	height: 16.5em;
+}
 .actionMenu dd li {
     display: list-item;
 }
@@ -235,4 +238,10 @@ div.discussion {
     overflow: hidden;
     padding: 0;
     width: 1px;
+}
+#plone-contentmenu-display,
+#plone-contentmenu-workflow,
+#personaltools-preferences,
+#personaltools-dashboard {
+    display: none;
 }
