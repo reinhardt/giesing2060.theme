@@ -64,14 +64,14 @@ a.main-menu {
 	color: #303030;
 }
 #giesing-main-menu dd a:hover {
-	/*olor: #80C0FF;*/
+	/*color: #80C0FF;*/
 	background-color: #80C0FF;
 	text-decoration: none;
 }
 .actionMenu.activated .actionMenuContent,
 #contentActionMenus dl.actionMenu.activated dd {
     z-index: 1008;
-	height: 50%;
+	/*height: auto;*/
 	transition: all 300ms ease 0s;
 }
 dl.actionMenu ul {
@@ -80,11 +80,12 @@ dl.actionMenu ul {
 dl.actionMenu.deactivated dd {
     /*display: none;*/
 	visibility: hidden;
-	height: 0%;
+	height: 0em;
 	/*transform: translate(0,-100px);*/
 }
 dl.actionMenu.activated dd {
     position: absolute;
+	height: 15.5em;
 }
 a#portal-logo {
     display: inline-block;
@@ -132,13 +133,12 @@ div#explore .previous {
 div#explore .next a,
 div#explore .previous a {
     color: #303030;
-}
-div#explore .next a:hover,
-div#explore .previous a:hover {
+}*/
+div#explore a.next:hover,
+div#explore a.previous:hover {
 	background-color: #80C0FF;
-	text-decoration: underline;
 }
-*/
+
 div#explore .tag {
 	font-weight: 100;
 	width: 22.25%;
