@@ -48,6 +48,7 @@
   <drop css:content="div#formfield-form-widgets-timetag" />
   <drop css:content="div#formfield-form-widgets-locationtag" />
 
+  <before css:content="#edit-bar" css:theme="#content" />
   <!-- Main content rule: Put plone content into theme content -->
   <append css:content-children="#content" css:theme="#content" />
 </rules>
