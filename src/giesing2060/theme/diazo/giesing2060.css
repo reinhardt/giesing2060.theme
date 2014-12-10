@@ -153,6 +153,12 @@ a#portal-logo img {
     border-color: #303030;
     border-style: solid;
 }
+#background-bar .actionMenu.deactivated a.background:before {
+    content: ">";
+}
+#background-bar .actionMenu.activated a.background:before {
+    content: "<";
+}
 a.navTreeFolderish span:before {
     content: "ה ";
 }
