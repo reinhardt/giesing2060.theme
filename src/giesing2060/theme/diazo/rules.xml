@@ -9,7 +9,6 @@
   <theme href="index.html" css:if-content="#visual-portal-wrapper" />
 
   <!-- Pull in Plone JS -->
-  <!-- FIXME The main menu does not work if we do this -->
   <drop theme="/html/head/script" />
   <after theme-children="/html/head"
          content="/html/head/link[contains(@href, '++resource++collective.markitup')]" />
