@@ -25,9 +25,6 @@
   <merge attributes="class" css:content="body" css:theme="body" />
   <copy attributes="id dir" css:content="body" css:theme="body" />
 
-  <!-- Clean up any demo content that comes with the theme -->
-  <drop css:theme-children="#content"/>
-
   <!--append css:content="#edit-bar" css:theme="#content"
           css:if-content="#edit-bar" /-->
 
@@ -57,7 +54,19 @@
   <drop css:content="div#formfield-form-widgets-locationtag" />
 
   <before css:content="#edit-bar" css:theme="#content" />
+
   <!-- Main content rule: Put plone content into theme content -->
-  <append css:content-children="#content" css:theme="#content" />
+  <rules css:if-content=".portaltype-collective-giesing-snippet">
+      <replace css:content="#content #viewlet-above-content-title" css:theme="#content #viewlet-above-content-title" />
+      <replace css:content="#content #parent-fieldname-title" css:theme="#content #parent-fieldname-title" />
+      <replace css:content="#content #viewlet-below-content-title" css:theme="#content #viewlet-below-content-title" />
+      <replace css:content="#content #viewlet-above-content-body" css:theme="#content #viewlet-above-content-body" />
+      <replace css:content="#content #content-core" css:theme="#content #content-core" />
+      <drop css:content="#formfield-form-widgets-text label" />
+  </rules>
+  <rules css:if-not-content=".portaltype-collective-giesing-snippet">
+      <drop css:theme-children="#content"/>
+      <append css:content-children="#content" css:theme="#content" />
+  </rules>
 </rules>
 
