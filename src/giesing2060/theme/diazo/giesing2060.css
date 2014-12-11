@@ -248,6 +248,10 @@ div#spacetime .tag *:link:hover{
 #locationtag {
     margin-right: auto;
 }
+#timetag a {
+    color: #80C0FF;
+    cursor: pointer;
+}
 /*div#explore .tag a {
 }*/
 
