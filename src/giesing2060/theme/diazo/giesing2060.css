@@ -23,7 +23,7 @@ body {
 * *:link:hover,
 * *:visited:hover {
     text-decoration: none;
-	text-shadow: 0 0 5px rgba(128,192,255,0.8);
+	text-shadow: 0 0 7px rgba(128,192,255,0.8);
 }
 .documentFirstHeading{
 	font-size: 110%;
@@ -67,6 +67,10 @@ a.main-menu {
     border-width: 0.1em;
     border-color: #80C0FF;
     border-style: solid;
+}
+a.main-menu:hover{
+    text-shadow: none;
+    background-color: rgba(128,192,255,0.1);
 }
 .actionMenu dd {
     background: none repeat scroll 0 0 rgba(235,240,242,0.9);
