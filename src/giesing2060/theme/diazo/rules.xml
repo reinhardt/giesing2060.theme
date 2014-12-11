@@ -8,8 +8,8 @@
   <copy theme="/html/head/meta" content="/html/head/meta" />
 
   <rules css:if-content="#visual-portal-wrapper">
-      <theme href="index.html" css:if-not-content=".portaltype-document" />
-      <theme href="background.html" css:if-content=".portaltype-document" />
+      <theme href="index.html" css:if-not-content=".section-background" />
+      <theme href="background.html" css:if-content=".section-background" />
   </rules>
 
   <!-- Pull in Plone JS -->
@@ -39,7 +39,7 @@
   <after css:content="#portal-personaltools li" css:theme-children="#giesing-main-menu div.second" />
 
   <!-- Fill the background menu -->
-  <replace css:content-children=".portletNavigationTree ul.navTree" css:theme-children="#background-menu .actionMenuContent ul" />
+  <replace css:content-children=".portletNavigationTree ul.navTreeLevel0" css:theme-children="#background-menu .actionMenuContent ul" />
 
   <!-- Fill the explore bar -->
   <replace css:content="span#form-widgets-timetag" css:theme-children="div#timetag span" />
