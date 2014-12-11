@@ -22,7 +22,8 @@ body {
 }
 * *:link:hover,
 * *:visited:hover {
-    color: #1B6BBA;
+    text-decoration: none;
+	text-shadow: 0 0 5px rgba(128,192,255,0.8);
 }
 .documentFirstHeading{
 	font-size: 110%;
@@ -124,7 +125,7 @@ a#portal-logo img {
     background-color: #80C0FF;
     color: #303030;
     border-width: 0.1em;
-    border-color: #3badfb;
+    border-color: #3e9efd;
     border-style: solid;
 	font-weight: 500;
 }
