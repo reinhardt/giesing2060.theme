@@ -241,7 +241,6 @@ div#spacetime .tag {
 	display: inline-block;
     overflow: hidden;
     border: 0.2em solid #303030;
-    /*padding: 0 0.5em;*/
 }
 div#spacetime .tag *:link:hover{
 	font-weight: 100;
