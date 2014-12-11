@@ -228,7 +228,8 @@ div#explore a.previous:hover {
 
 div#spacetime {
     width: 100%;
-    margin-top: 1em;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -241,6 +242,7 @@ div#spacetime .tag {
 	display: inline-block;
     overflow: hidden;
     border: 0.2em solid #303030;
+    margin-bottom: 0em;
 }
 div#spacetime .tag *:link:hover{
 	font-weight: 100;
@@ -261,14 +263,26 @@ div#spacetime .tag *:link:hover{
 /*div#explore .tag a {
 }*/
 
+h3 { /* vor allem  gebraucht für die TimeLineViewlet HL*/
+    font-size: 90%;
+    font-weight: 300;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0.9em;
+}
+
 #TimeLineViewlet,
 div#commenting,
 div.discussion {
     display: none;
 }
 #TimeLineViewlet ul {
-    height: 3.75em;
-    padding: 0.1em 0em 0em;
+    font-size: 75%;
+	height: 3.75em;
+    padding: 0em 0em 0em;
+    margin-top: 0.2em;
+    margin-bottom: 2.5em;
+    margin-left: 0.9em;
 }
 #TimeLineViewlet ul li {
     display: inline;
