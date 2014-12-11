@@ -6,7 +6,11 @@
   <replace content='/html/head/title' theme='/html/head/title' />
   <append content='/html/head/base' theme='/html/head' />
   <copy theme="/html/head/meta" content="/html/head/meta" />
-  <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+
+  <rules css:if-content="#visual-portal-wrapper">
+      <theme href="index.html" css:if-not-content=".portaltype-document" />
+      <theme href="background.html" css:if-content=".portaltype-document" />
+  </rules>
 
   <!-- Pull in Plone JS -->
   <drop theme="/html/head/script" />
@@ -33,6 +37,9 @@
   <drop css:theme-children="#giesing-main-menu div.second" />
   <after content="//*[@id='portal-globalnav']//li[@id='portaltab-news']" css:theme-children="#giesing-main-menu div.second" />
   <after css:content="#portal-personaltools li" css:theme-children="#giesing-main-menu div.second" />
+
+  <!-- Fill the background menu -->
+  <replace css:content-children=".portletNavigationTree ul.navTree" css:theme-children="#background-menu .actionMenuContent ul" />
 
   <!-- Fill the explore bar -->
   <replace css:content="span#form-widgets-timetag" css:theme-children="div#timetag span" />

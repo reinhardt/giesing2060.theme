@@ -163,8 +163,8 @@ a#portal-logo img {
 a.navTreeFolderish span:before {
     content: "ה ";
 }
-a.navTreeCurrentNode,
-a.navTreeCurrentNode:hover {
+a.navTreeCurrentItem,
+a.navTreeCurrentItem:hover {
     font-weight: bold;
 }
 #body {
