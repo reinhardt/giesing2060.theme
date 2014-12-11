@@ -124,8 +124,9 @@ a#portal-logo img {
     background-color: #80C0FF;
     color: #303030;
     border-width: 0.1em;
-    border-color: #2965D2;
+    border-color: #3badfb;
     border-style: solid;
+	font-weight: 500;
 }
 #background-bar span.section {
     margin: auto 0;
