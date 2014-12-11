@@ -241,7 +241,7 @@ div#spacetime .tag {
 	display: inline-block;
     overflow: hidden;
     border: 0.2em solid #303030;
-    padding: 0 0.5em;
+    /*padding: 0 0.5em;*/
 }
 div#spacetime .tag *:link:hover{
 	font-weight: 100;
@@ -255,6 +255,9 @@ div#spacetime .tag *:link:hover{
 #timetag a {
     color: #80C0FF;
     cursor: pointer;
+}
+#timetag a:hover {
+	text-shadow: 0 0 7px rgba(128,192,255,0.8);
 }
 /*div#explore .tag a {
 }*/
@@ -270,14 +273,14 @@ div.discussion {
 }
 #TimeLineViewlet ul li {
     display: inline;
-    border-right: 0.1em solid gray;
+    border-right: 0.1em solid #3E9EFD;
 }
 #TimeLineViewlet ul li.even {
-    border-bottom: 0.1em solid black;
-    padding: 0.1em 1em 0.5em;
+    border-bottom: 0.1em solid #3E9EFD;
+    padding: 0.1em 1em 0.2em;
 }
 #TimeLineViewlet ul li.odd {
-    border-top: 0.1em solid black;
+    border-top: 0.1em solid #3E9EFD;
     padding: 0.5em 1em 0.1em;
     position: relative;
     top: 2.15em;
