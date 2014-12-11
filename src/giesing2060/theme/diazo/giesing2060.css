@@ -198,7 +198,6 @@ div#explore .previous {
    	background-color: #EBF0F2;
 	width: 22.25%;
     font-size: 75%;
-    float: right;
     text-align: center;
 	vertical-align: middle;
 	display: inline-block;
@@ -206,6 +205,12 @@ div#explore .previous {
     border: 0.2em solid #303030;
     height: 2.75em;
     padding: 0 0.5em;
+}
+div#explore .next {
+    float: right;
+}
+div#explore .previous {
+    float: left;
 }
 /*
 div#explore .next a,
@@ -217,21 +222,31 @@ div#explore a.previous:hover {
 	background-color: #80C0FF;
 }
 
-div#explore .tag {
+div#spacetime {
+    width: 100%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#spacetime .tag {
 	font-weight: 100;
-	width: 22.25%;
     font-size: 75%;
-    float: right;
     text-align: center;
 	vertical-align: middle;
 	display: inline-block;
     overflow: hidden;
     border: 0.2em solid #303030;
-    height: 2.75em;
     padding: 0 0.5em;
 }
-div#explore .tag *:link:hover{
+div#spacetime .tag *:link:hover{
 	font-weight: 100;
+}
+#timetag {
+    margin-left: auto;
+}
+#locationtag {
+    margin-right: auto;
 }
 /*div#explore .tag a {
 }*/
