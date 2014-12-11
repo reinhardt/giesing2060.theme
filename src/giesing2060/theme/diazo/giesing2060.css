@@ -154,6 +154,9 @@ a#portal-logo img {
     border-color: #303030;
     border-style: solid;
 }
+#background-bar .actionMenu dd {
+    width: auto;
+}
 #background-bar .actionMenu.deactivated a.background:before {
     content: ">";
 }
