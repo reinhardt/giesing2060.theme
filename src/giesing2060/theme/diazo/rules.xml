@@ -50,8 +50,8 @@
   <replace css:content="div.discussion" css:theme="div.discussion" />
   <strip css:if-not-content="div.discussion" css:theme="#link-comments a" />
 
-  <drop css:content="div#formfield-form-widgets-timetag" />
-  <drop css:content="div#formfield-form-widgets-locationtag" />
+  <drop css:content=".template-view div#formfield-form-widgets-timetag" />
+  <drop css:content=".template-view div#formfield-form-widgets-locationtag" />
 
   <before css:content="#edit-bar" css:theme="#content" />
 
