@@ -119,11 +119,15 @@ a#portal-logo {
     display: inline-block;
     height: 5em;
     position: relative;
+    max-width: 70%;
+    max-width: 60vw;
+    max-width: calc(100% - 6.25em);
 }
 a#portal-logo img {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    max-width: 100%;
 }
 #background-bar {
     background-color: #80C0FF;
