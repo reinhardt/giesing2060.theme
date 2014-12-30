@@ -7,7 +7,7 @@
   <append content='/html/head/base' theme='/html/head' />
   <copy theme="/html/head/meta" content="/html/head/meta" />
 
-  <rules css:if-content="#visual-portal-wrapper">
+  <rules css:if-content="#visual-portal-wrapper" if-not-path="@@markitup_preview">
       <theme href="index.html" css:if-not-content=".section-background" />
       <theme href="background.html" css:if-content=".section-background" />
   </rules>
