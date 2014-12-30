@@ -368,3 +368,27 @@ div.discussion {
     overflow-x: auto;
     padding: 1em;
 }
+div.overlay {
+    display: none;
+    font-size: 80%;
+    height: auto;
+    margin: 1em;
+    width: auto;
+}
+div.overlay-iframe, div.overlay-ajax {
+    min-height: 100px;
+    width: 60%;
+    z-index: 99;
+}
+div.overlay-iframe {
+    height: 60%;
+}
+div.overlaybg div.close, div.overlay div.close {
+    background-image: url("pb_close.png");
+    cursor: pointer;
+    height: 30px;
+    left: -14px;
+    position: absolute;
+    top: -14px;
+    width: 30px;
+}
