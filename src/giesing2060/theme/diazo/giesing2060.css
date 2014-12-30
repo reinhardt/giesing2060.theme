@@ -384,7 +384,7 @@ div.overlay-iframe {
     height: 60%;
 }
 div.overlaybg div.close, div.overlay div.close {
-    background-image: url("pb_close.png");
+    background-image: url("images/pb_close.png");
     cursor: pointer;
     height: 30px;
     left: -14px;
