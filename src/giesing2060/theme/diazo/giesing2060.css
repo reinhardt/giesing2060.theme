@@ -358,3 +358,13 @@ div.discussion {
 #content textarea {
     width: 100%;
 }
+#content pre {
+    background-color: #222222;
+    color: #80C0FF;
+    font-family: Consolas,Inconsolata,Menlo,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace;
+    font-size: 90%;
+    line-height: 1.25em;
+    margin-bottom: 1em;
+    overflow-x: auto;
+    padding: 1em;
+}
