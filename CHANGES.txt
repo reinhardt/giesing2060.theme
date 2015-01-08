@@ -5,6 +5,9 @@ Changelog
 ----------------
 
 - fixed logo link [reinhardt]
+- styled ac_results [reinhardt]
+- use class for title rule, id may vary [reinhardt]
+- improved content list markup [reinhardt]
 
 
 1.0 (2015-01-08)
