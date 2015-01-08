@@ -355,6 +355,12 @@ div.discussion {
 .markItUpHeader ul a {
     background-position: center;
 }
+#content ul {
+    list-style: outside disc none;
+}
+#content ul li {
+    display: inline-block;
+}
 #content textarea {
     width: 100%;
 }
