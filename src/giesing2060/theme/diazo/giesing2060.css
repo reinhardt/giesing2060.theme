@@ -368,6 +368,35 @@ div.discussion {
     overflow-x: auto;
     padding: 1em;
 }
+
+.ac_results {
+    background: none repeat scroll 0 0 rgba(235, 240, 242, 0.9);
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 0;
+    z-index: 99999;
+}
+.ac_results ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.ac_results li {
+    cursor: default;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    overflow: hidden;
+    padding: 2px 5px;
+    color: #303030;
+}
+.ac_results li.ac_over {
+    background-color: #606060;
+	color: #EBF0F2;
+}
+
 div.overlay {
     display: none;
     font-size: 80%;
