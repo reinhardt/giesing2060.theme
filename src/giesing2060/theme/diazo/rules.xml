@@ -20,6 +20,9 @@
 
   <!--<replace theme="/html/head/meta/[@name='viewport']" content="/html/head/meta/[@name='viewport']"/>-->
 
+  <!-- Logo link -->
+  <copy attributes="href" css:theme="a#portal-logo" css:content="a#portal-logo" />
+
   <!-- Copy over the id/class attributes on the body tag, this is
        important for Kupu and per-section styling -->
   <merge attributes="class" css:content="body" css:theme="body" />
