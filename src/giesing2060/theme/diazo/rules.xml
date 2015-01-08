@@ -61,7 +61,7 @@
   <!-- Main content rule: Put plone content into theme content -->
   <rules css:if-content=".portaltype-collective-giesing-snippet">
       <replace css:content="#content #viewlet-above-content-title" css:theme="#content #viewlet-above-content-title" />
-      <replace css:content="#content #parent-fieldname-title" css:theme="#content #parent-fieldname-title" />
+      <replace css:content="#content .documentFirstHeading" css:theme="#content .documentFirstHeading" />
       <replace css:content="#content #viewlet-below-content-title" css:theme="#content #viewlet-below-content-title" />
       <replace css:content="#content #viewlet-above-content-body" css:theme="#content #viewlet-above-content-body" />
       <replace css:content="#content #content-core" css:theme="#content #content-core" />
