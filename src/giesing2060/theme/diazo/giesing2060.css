@@ -359,7 +359,7 @@ div.discussion {
     list-style: outside disc none;
 }
 #content ul li {
-    display: inline-block;
+    display: list-item;
 }
 #content textarea {
     width: 100%;
