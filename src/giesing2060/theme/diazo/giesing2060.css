@@ -129,6 +129,23 @@ a#portal-logo img {
     transform: translateY(-50%);
     max-width: 100%;
 }
+
+.portalMessage {
+    font-size: 80%;
+    border: 1px solid #4A5D6E;
+}
+.portalMessage dt {
+    float: left;
+    margin-right: 0.5em;
+    background-color: #3D4D5E;
+    padding: 0.25em 0.5em;
+}
+.portalMessage dd {
+    background-color: #80C0FF;
+    padding: 0.25em 0.25em;
+    color: black;
+}
+
 #background-bar {
     background-color: #80C0FF;
     color: #303030;
