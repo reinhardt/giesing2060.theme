@@ -14,7 +14,7 @@
            Cookie authentication has been disabled.
     </div>
 
-    <div tal:define="ve context/validate_email" tal:omit-tag=""
+    <div tal:define="ve context/validate_email; intro_page context/portal_properties/site_properties/new_user_intro_page|nothing" tal:omit-tag=""
          tal:condition="python: auth">
 
         <h1 class="documentFirstHeading"
@@ -96,6 +96,9 @@
                            />
                 </form>
             </tal:block>
+            <p tal:condition="intro_page" i18n:translate="description_get_started">
+                To get started, visit the page <a href="background/autorenheim" tal:attributes="href intro_page" tal:content="python:context.restrictedTraverse(intro_page).Title()" i18n:name="intro_page">the intro page</a>.
+            </p>
         </div>
 
     </div>
@@ -103,3 +106,4 @@
 </metal:main>
 </body>
 </html>
+

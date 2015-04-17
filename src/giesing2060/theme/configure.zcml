@@ -43,4 +43,6 @@
       layer="giesing2060.theme.interfaces.IGiesing2060Layer"
       /-->
 
+    <i18n:registerTranslations directory="locales"/>
+
 </configure>
