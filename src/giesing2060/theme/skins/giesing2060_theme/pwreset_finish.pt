@@ -12,6 +12,9 @@
         Your password has been set successfully. You may now log in with your
         new password.
     </div>
+    <p tal:define="intro_page context/portal_properties/site_properties/new_user_intro_page|nothing" tal:condition="intro_page" i18n:translate="description_get_started">
+        To get started, visit the page <a href="background/autorenheim" tal:attributes="href intro_page" tal:content="python:context.restrictedTraverse(intro_page).Title()" i18n:name="intro_page">the intro page</a>.
+    </p>
 
 </metal:main>
 
