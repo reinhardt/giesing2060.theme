@@ -211,6 +211,10 @@ a.navTreeCurrentItem:hover {
 .comments {
     font-size: 80%;
 }
+#search-filter {
+    color: #303030;
+}
+
 div#explore {
     height: 2.75em;
 }
