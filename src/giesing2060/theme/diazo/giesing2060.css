@@ -26,8 +26,14 @@ body {
 	text-shadow: 0 0 7px rgba(128,192,255,0.8);
 }
 .documentFirstHeading{
-	font-size: 110%;
-	font-weight: 700;
+}
+h1 {
+    font-size: 120%;
+    font-weight: 700;
+}
+h2 {
+    font-size: 110%;
+    font-weight: 700;
 }
 * ul, ol {
     list-style: outside none none;
