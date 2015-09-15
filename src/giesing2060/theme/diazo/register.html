@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="giesing2060.css" media="screen" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="javascript/jquery.js"></script>
+        <script type="text/javascript" src="javascript/dropdown.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body dir="ltr" class="template-register portaltype-plone-site site-giesing2060 icons-on userrole-anonymous">
+        <div id="header">
+            <dl class="actionMenu" id="giesing-main-menu">
+              <dt class="actionMenuHeader">
+                <a href="#" class="main-menu">&#9776;</a>
+              </dt>
+              <dd class="actionMenuContent">
+                <ul>
+                    <div class="search">
+                        <li>
+                            <form action="@@search" id="livesearch0">
+                                <input type="text" id="searchGadget" class="searchField" accesskey="4" placeholder="Suchbegriff eingeben" title="Website durchsuchen" size="18" name="SearchableText" autocomplete="off" />
+                            </form>
+                        </li>
+                    </div>
+                    <hr/>
+                    <div class="first">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Story(lines)</a></li>
+                        <li><a href="background.html">Background Artikel</a></li>
+                        <li><a href="#">Letzte Änderungen</a></li>
+                    </div>
+                    <hr/>
+                    <div class="second">
+                        <li><a href="#">Blag</a></li>
+                        <li>
+                          <a href="edit.html">Anmelden</a>
+                          <a href="register.html" id="personaltools-join">Registrieren</a>
+                        </li>
+                    </div>
+                </ul>
+              </dd>
+            </dl>
+            <a href="index.html" accesskey="1" title="Giesing 2060" id="portal-logo">
+                <img title="Giesing 2060" alt="Giesing 2060" src="logo.png">
+            </a>
+        </div>
+        <div id="body" class="visualClear">
+          <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+            <dt>Info</dt>
+            <dd></dd>
+          </dl>
+          <article id="content">
+            
+            <h1 class="documentFirstHeading">Registrierungsformular</h1>
+            <div id="content-core">
+
+                <form class="rowlike enableUnloadProtection   kssattr-formname-register" action="https://giesing2060.de/@@register" method="post" id="form" enctype="multipart/form-data">
+                    <!-- Default fieldset -->
+                  <div data-fieldname="form.widgets.fullname" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.fullname empty" id="formfield-form-widgets-fullname">
+                    <label for="form-widgets-fullname" class="horizontal">
+                        Vor- und Nachname
+                        <span class="formHelp">Tragen Sie bitte Ihren vollen Namen ein.</span>
+                    </label>
+
+                    <div class="fieldErrorBox"></div>
+                    
+                    <input id="form-widgets-fullname" name="form.widgets.fullname" class="text-widget textline-field" value="" type="text" />
+                  </div>
+                                          
+                  <div data-fieldname="form.widgets.username" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.username empty" id="formfield-form-widgets-username">
+                    <label for="form-widgets-username" class="horizontal">
+                        Benutzername
+                        <span class="required horizontal" title="Erforderlich"> </span>
+
+                        <span class="formHelp">Tragen Sie Ihren gewünschten Benutzernamen ein, beispielsweise »pmueller«. Diesen Namen benötigen Sie später zur Anmeldung. Es sind keine Leer- oder Sonderzeichen erlaubt, zwischen Groß- und Kleinschreibung wird unterschieden.</span>
+                    </label>
+
+                    <div class="fieldErrorBox"></div>
+                    
+                    <input id="form-widgets-username" name="form.widgets.username" class="text-widget required asciiline-field" value="" type="text" />
+                </div>
+                                          
+                <div data-fieldname="form.widgets.email" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.email empty" id="formfield-form-widgets-email">
+                  <label for="form-widgets-email" class="horizontal">
+                      E-Mail
+
+                      <span class="required horizontal" title="Erforderlich"> </span>
+
+                      <span class="formHelp">Tragen Sie Ihre E-Mail-Adresse ein. Sie wird beispielsweise benötigt, wenn Sie Ihr Passwort vergessen haben. Wir respektieren Ihre Privatsphäre und geben Ihre Adresse nicht an Dritte weiter.</span>
+                  </label>
+
+                  <div class="fieldErrorBox"></div>
+
+                  <input id="form-widgets-email" name="form.widgets.email" class="text-widget required asciiline-field" value="" type="text" />
+              </div>
+
+              <div data-fieldname="form.widgets.mail_me" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.mail_me" id="formfield-form-widgets-mail_me">
+    
+                <span id="form-widgets-mail_me" class="single-checkbox-widget bool-field"><span class="selected-option">Sie werden als nächstes eine E-Mail erhalten. Diese enthält einen Link zu einer Seite, auf der Sie die Registrierung abschließen können.</span></span>
+                <div class="fieldErrorBox"></div>
+
+              </div>
+
+              <div data-fieldname="form.widgets.captcha" class="field z3cformInlineValidation kssattr-fieldname-form.widgets.captcha empty" id="formfield-form-widgets-captcha">
+                <label for="form-widgets-captcha" class="horizontal">
+                    Captcha
+                </label>
+
+                <div class="fieldErrorBox"></div>
+                
+                <strong><span>Frage</span></strong>:
+                <span>Welchem Genre gehört das Projekt Giesing2060 an?</span><br />
+
+                <strong><span>Ergebnis</span></strong>:
+                
+                <input type="text" id="form-widgets-captcha" name="form.widgets.captcha" class="text-widget textline-field" size="30" maxlength="200" value="" />
+                                  
+                <input type="hidden" name="question_id" value="question6" />
+                <input type="hidden" name="id_check" value="ffe7e4334a45a06d94477e147d7a1f93" />
+                      
+
+              </div>
+
+                          <!-- Secondary fieldsets -->
+                        
+              <div class="formControls">
+                <input id="form-buttons-register" name="form.buttons.register" class="submit-widget button-field" value="Registrieren" type="submit" />
+              </div>
+
+              <input type="hidden" name="_authenticator" value="392bde55662ae645cda2b9b3787fddd9d0ea0ba6" />
+
+            </form>
+            
+          </div>
+            
+        </article>
+
+        <div id="explore">
+            
+            
+        </div>
+
+        <div id="comments" class="comments">
+            <script type="text/javascript">
+                jQuery(document).ready(function () {
+                    num_comments = jQuery('div.discussion').children().length || 'noch keine';
+                    jQuery('#num-comments').text(num_comments);
+                });
+            </script>
+            <p><span id="link-comments">Zu diesem Beitrag gibt es <span id="num-comments">24578</span> Kommentare.</span>
+            <a href="#commenting" onclick="jQuery('#commenting').slideToggle();">Wie hat Dir der Schnipsel gefallen?</a></p>
+            
+        </div>
+      </div>
+    </body>
+</html>
