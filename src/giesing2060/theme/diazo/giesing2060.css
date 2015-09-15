@@ -309,7 +309,7 @@ div.discussion {
     margin-bottom: 2.5em;
     margin-left: 0.9em;
 }
-#TimeLineViewlet ul li {
+#content #TimeLineViewlet ul li {
     display: inline;
     border-right: 0.1em solid #3E9EFD;
 }
