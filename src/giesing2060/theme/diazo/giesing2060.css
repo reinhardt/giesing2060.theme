@@ -453,8 +453,19 @@ div.overlaybg div.close, div.overlay div.close {
     top: -14px;
     width: 30px;
 }
+input { /*experimental phase*/
+    background-color: #EBF0F2;
+    border: none;
+	font-family: 'Roboto Slab', serif;
+    font-color: #303030;
+    font-size: 90%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .template-login_form input, .template-register input {
-    width: 25%;    
+    width: 30%;
 }
 .formHelp {
     font-size: 90%;
