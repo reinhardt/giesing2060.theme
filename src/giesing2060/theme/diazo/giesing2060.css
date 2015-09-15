@@ -453,9 +453,13 @@ div.overlaybg div.close, div.overlay div.close {
     top: -14px;
     width: 30px;
 }
-.template-login_form input {
-    width: 25%;
-} 
-.template-register input{
-    width: 25%;
+.template-login_form input, .template-register input {
+    width: 25%;    
 }
+.formHelp {
+    font-size: 90%;
+    font-weight: 100;
+}
+label.horizontal {
+    margin-top: 20px; /* tut bisher nix */
+}    
