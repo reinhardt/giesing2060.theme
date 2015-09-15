@@ -5,6 +5,7 @@ body {
 	font-family: 'Roboto Slab', serif;
 	font-weight: 300; 
 }
+
 ::selection {
     background: #80C0FF;
 	color: #303030;
@@ -26,14 +27,6 @@ body {
 	text-shadow: 0 0 7px rgba(128,192,255,0.8);
 }
 .documentFirstHeading{
-}
-h1 {
-    font-size: 120%;
-    font-weight: 700;
-}
-h2 {
-    font-size: 110%;
-    font-weight: 700;
 }
 * ul, ol {
     list-style: outside none none;
@@ -135,7 +128,6 @@ a#portal-logo img {
     transform: translateY(-50%);
     max-width: 100%;
 }
-
 .portalMessage {
     font-size: 80%;
     border: 1px solid #4A5D6E;
@@ -293,7 +285,14 @@ div#spacetime .tag *:link:hover{
 }
 /*div#explore .tag a {
 }*/
-
+h1 {
+    font-size: 120%;
+    font-weight: 700;
+}
+h2 {
+    font-size: 110%;
+    font-weight: 700;
+}
 h3 { /* vor allem  gebraucht für die TimeLineViewlet HL*/
     font-size: 90%;
     font-weight: 300;
@@ -453,4 +452,10 @@ div.overlaybg div.close, div.overlay div.close {
     position: absolute;
     top: -14px;
     width: 30px;
+}
+.template-login_form input {
+    width: 25%;
+} 
+.template-register input{
+    width: 25%;
 }
