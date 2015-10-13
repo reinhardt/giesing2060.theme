@@ -49,6 +49,7 @@
 	list-style:none;
 	float:left;
 	position:relative;
+    margin-bottom: 0.5em;
 }
 .markItUpHeader ul li:hover > ul{
 	display:block;

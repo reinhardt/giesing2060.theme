@@ -287,11 +287,11 @@ div#spacetime .tag *:link:hover{
 }*/
 h1 {
     font-size: 120%;
-    font-weight: 700;
+    font-weight: 500;
 }
 h2 {
     font-size: 110%;
-    font-weight: 700;
+    font-weight: 500;
 }
 h3 { /* vor allem  gebraucht für die TimeLineViewlet HL*/
     font-size: 90%;
@@ -351,6 +351,9 @@ div.discussion {
     border-top-right-radius: 0.5em;
     display: block;
     margin-left: 0;
+}
+#edit-bar li{
+    margin-right: 0.5em;
 }
 #contentActionMenus {
     border-radius: 0 0.5em 0.5em;
@@ -463,6 +466,13 @@ input { /*experimental phase*/
     padding-bottom: 2px;
     padding-left: 5px;
     padding-right: 5px;
+    margin-top: 0.3em;
+}
+.template-register input, .template-login_form div.field {
+    display: block;
+}
+.template-register div.field, .template-login_form div.field {
+    margin-bottom: 1em;
 }
 .template-login_form input, .template-register input {
     width: 30%;
@@ -470,7 +480,11 @@ input { /*experimental phase*/
 .formHelp {
     font-size: 90%;
     font-weight: 100;
+    display: block;
 }
 label.horizontal {
-    margin-top: 20px; /* tut bisher nix */
-}    
+    font-weight: 500;
+}
+.template-register strong {
+    font-weight: 300;
+}
