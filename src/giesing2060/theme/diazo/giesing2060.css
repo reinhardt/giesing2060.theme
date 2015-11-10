@@ -44,13 +44,12 @@ body {
 }
 #giesing-main-menu {
     height: 5em;
-    width: 5em;
+    width: 2.5em;
     float: left;
     margin: 0 1.25em 0 0;
 }
 #giesing-main-menu dt {
-    height: 5em;
-    width: 5em;
+    margin-top: 1.85em;
 }
 #giesing-main-menu dt a {
  	color: #80C0FF;
@@ -58,11 +57,11 @@ body {
 a.main-menu {
     text-align: center;
     vertical-align: middle;
-    font-size: 2em;
-    line-height: 2.25em;
+    font-size: 1.5em;
+    line-height: 1.5em;
     display: inline-block;
-    width: 2.4em;
-    height: 2.4em;
+    width: 1.5em;
+    height: 1.5em;
     border-width: 0.1em;
     border-color: #80C0FF;
     border-style: solid;
@@ -77,7 +76,8 @@ a.main-menu:hover{
     padding: 0.25em;
     margin: 0;
     font-size: 100%;
-    line-height: 175%;	
+    line-height: 175%;
+    ;
 }
 dl#giesing-main-menu.actionMenu.activated dd {
 	height: 15.5em;
