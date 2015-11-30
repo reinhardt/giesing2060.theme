@@ -49,7 +49,7 @@ body {
     margin: 0 1.25em 0 0;
 }
 #giesing-main-menu dt {
-    margin-top: 1.85em;
+    margin-top: -0.9em;
 }
 #giesing-main-menu dt a {
  	color: #80C0FF;
@@ -125,7 +125,7 @@ a#portal-logo {
 a#portal-logo img {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     max-width: 100%;
 }
 .portalMessage {
