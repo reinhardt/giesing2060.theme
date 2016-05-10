@@ -150,7 +150,7 @@ a#portal-logo img {
     border-width: 0.1em;
     border-color: #3e9efd;
     border-style: solid;
-	font-weight: 500;
+	font-weight: 300;
 }
 #background-bar span.section {
     margin: auto 0;
@@ -286,24 +286,35 @@ div#spacetime .tag *:link:hover{
 /*div#explore .tag a {
 }*/
 h1 {
-    font-size: 120%;
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 210%;
+    font-weight: 100;
 }
 h2 {
-    font-size: 110%;
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 160%;
+    font-weight: 100;
 }
-h3 { /* vor allem  gebraucht für die TimeLineViewlet HL*/
-    font-size: 90%;
+h3 { /* auch gebraucht für die TimeLineViewlet HL*/
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 130%;
+    font-weight: 100;  
+    /*font-size: 90%;
     font-weight: 300;
     margin-top: 0em;
     margin-bottom: 0em;
-    margin-left: 0.9em;
+    margin-left: 0.9em;*/
 }
 
 h4 {
-    font-size: 100%;
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-indent: 0.8em;
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: 100;
 }
 
 #TimeLineViewlet,
