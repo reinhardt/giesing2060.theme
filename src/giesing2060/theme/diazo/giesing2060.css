@@ -322,6 +322,10 @@ div#commenting,
 div.discussion {
     display: none;
 }
+#commenting textarea#form-widgets-comment-text {
+    width: 45em;
+    height: 16em;
+}
 #TimeLineViewlet ul {
     font-size: 75%;
 	height: 3.75em;
