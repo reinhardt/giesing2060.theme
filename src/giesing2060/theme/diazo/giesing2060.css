@@ -476,12 +476,14 @@ div.overlaybg div.close, div.overlay div.close {
     top: -14px;
     width: 30px;
 }
-input { /*experimental phase*/
+
+input, textarea { /*experimental phase*/
     background-color: #EBF0F2;
     border: none;
 	font-family: 'Roboto Slab', serif;
     font-color: #303030;
-    font-size: 90%;
+    font-weight: 300;
+    font-size: 100%;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 5px;
