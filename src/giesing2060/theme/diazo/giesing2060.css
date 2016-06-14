@@ -276,7 +276,7 @@ div#spacetime .tag *:link:hover{
 #locationtag {
     margin-right: auto;
 }
-#timetag a {
+#timetag a, #locationtag a {
     color: #80C0FF;
     cursor: pointer;
 }
@@ -318,6 +318,7 @@ h4 {
 }
 
 #TimeLineViewlet,
+#LocationViewlet,
 div#commenting,
 div.discussion {
     display: none;
