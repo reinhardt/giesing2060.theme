@@ -43,11 +43,12 @@
 
   <!-- Fill the explore bar -->
   <replace css:content="span#form-widgets-timetag" css:theme-children="div#timetag span" />
-  <replace css:content="span#form-widgets-locationtag" css:theme-children="div#locationtag span" />
+  <replace css:content-children="span#form-widgets-locationtag a" css:theme-children="div#locationtag span a" />
   <replace css:content="a.next" css:theme="a.next" />
   <replace css:content="a.previous" css:theme="a.previous" />
 
   <replace css:content="#TimeLineViewlet" css:theme="#TimeLineViewlet" />
+  <replace css:content="#LocationViewlet" css:theme="#LocationViewlet" />
   
   <replace css:content="#commenting" css:theme="#commenting" />
   <replace css:content="div.discussion" css:theme="div.discussion" />
